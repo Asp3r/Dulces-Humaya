@@ -2,6 +2,10 @@
 /* ESTILOS PARA COMPUTADORAS Y PANTALLAS GRANDES */
 @media (min-width: 768px) {
 
+    header {
+        background-image: url("imgs/Central/imagenCentral.png");
+    }
+    
     .navbar {
         background-color: rgba(0, 0, 0, 0.7); /* Transparencia del navbar */
     }
@@ -12,10 +16,6 @@
     
     .navbar a:hover{
         color: rgb(161, 101, 32);
-    }
-    
-    header {
-        background-image: url("../imgs/Central/imagenCentral.png");
     }
 
 }
