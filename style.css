@@ -1,0 +1,24 @@
+
+/* ESTILOS PARA COMPUTADORAS Y PANTALLAS GRANDES */
+@media (min-width: 768px) {
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7); /* Transparencia del navbar */
+    }
+    
+    .navbar a {
+        color: rgb(192, 191, 191); 
+    }
+    
+    .navbar a:hover{
+        color: rgb(161, 101, 32);
+    }
+    
+    header {
+        background-image: url("../imgs/Central/imagenCentral.png");
+    }
+
+}
+
+/* ESTILOS PARA TABLETAS Y DISPOSITIVOS MOVILES */
+@media (max-width: 767px) {}
