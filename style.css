@@ -9,18 +9,19 @@
     }
     
     .navbar {
-        background-color: rgba(0, 0, 0, 0.7); 
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); 
         width: 100%;
+        /* rgba(0, 0, 0, 0.7) */
     }
     
     .navbar a {
         color: rgb(214, 212, 212); 
     }
     
-    .navbar a:hover{
+    .navbar a:hover {
         color: rgb(190, 150, 103);
     }
-
+    
     .header-text{
         width: 50%;
         align-content: end;
@@ -79,15 +80,32 @@
     }
     
     .casilla {
-        /* background-color: lightgray; Color de fondo de las casillas */
-        border: 1px solid #ccc; /* Borde opcional */
+        /* border: 1px solid #ccc;  */
         height: 350px; /* Altura de las casillas */
-        display: flexbox;
+        display:flexbox;
         justify-content: center;
         align-items: center;
         /* font-size: 1.25rem; Ajusta según sea necesario */
         color: white;
         
+    }
+
+    #casilla1{
+        background-image: url("imgs/Productos/Producto1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #casilla4{
+        background-image: url("imgs/Productos/Producto2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #casilla5{
+        background-image: url("imgs/Productos/Producto3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .casilla h3{
@@ -125,6 +143,73 @@
         border-color: black;
         background-color: rgb(190, 150, 103);
         /* rgb(190, 150, 103);; */
+    }
+
+    .alfajores-maicena{
+        display: flex;
+        justify-content: space-between; /* Distribuye espacio entre los contenedores hijos */
+        align-items: center; /* Alinea verticalmente los elementos en el centro */
+        height: 350px;
+        background-color: rgb(184, 155, 112);
+    }
+
+    .alfajores-descripcion{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }    
+
+    .alfajores-descripcion h3{
+        color: rgb(131, 95, 19);
+        font-weight: lighter;
+        padding-bottom: 3%;
+    }
+    
+
+    #texto-descripcion-alfajores{
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
+        width: 75%;
+        color: white;
+        padding-bottom: 3%;
+    }
+
+    #epigrafe-alfajores{
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
+        width: 75%;
+        font-weight: bold;
+        color: rgb(92, 67, 14);
+        padding-bottom: 7%;
+    }
+
+    .boton-alfajores{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        border-color: black;
+        background-color: rgb(184, 155, 112);
+    }
+
+    .boton-alfajores:hover{
+        background-color: black;
+        color: rgb(190, 150, 103);
+        border-color: rgb(190, 150, 103);
+    }
+
+    .alfajores-imagen {
+        display:flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;     /* Centra verticalmente */
+        width: 49%;
+        height: 100%; /* Asegura que el contenedor `.alfajores-imagen` use toda la altura disponible */
+    }
+    
+    .alfajores-imagen img {
+        width: 350px;
+        height: 300px;
+        object-fit: contain; /* Asegura que la imagen mantenga su proporción si las dimensiones del contenedor cambian */
     }
     
 
