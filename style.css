@@ -425,6 +425,86 @@
 
     }
 
+    footer {
+        display: flex; /* Activa Flexbox */
+        justify-content: space-between; /* Espacio entre cada sección */
+        align-items: center; /* Alinea las secciones verticalmente al centro */
+        padding: 20px; /* Espacio interno para el footer */
+        background-color: black; /* Opcional: color de fondo para contraste */
+    }
+    
+    footer section {
+        flex: 1; /* Distribuye el espacio de las secciones de manera uniforme */
+        /* border: 2px solid #BCA177; Borde para testeo */
+        padding: 10px; /* Espacio interno para cada sección */
+        margin-left: 5px; /* Espacio entre las secciones */
+        margin-right: 5px;
+
+        height: 250px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+
+    .footer-logo{
+        text-align: center;/* Centra el contenido dentro de cada sección */
+    }
+
+    #footer-logo-elemento{
+        width: 70%;
+
+    }
+
+    footer h4{
+        color: #795f34;
+        font-weight: lighter;
+    }
+
+    footer section p{
+        color: white;
+        font-weight: bold;
+    } 
+
+    footer section h5{
+        color: white;
+
+    }
+
+    footer section p:hover{
+        color: #cfa983;
+        cursor: pointer;
+    }
+    
+    .footer-redes{
+        width: 5%;
+    }
+
+    .footer-redes h4{
+        /* width: 40%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-redes img{
+        width: 100%;
+        transition: transform 0.3s ease
+    }
+
+    .footer-redes img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .footer-redes div{
+        padding-bottom: 2%;
+        width: 21%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .elemento-mapa{
+        width: 100%;
+    }
+
 }
 
 
