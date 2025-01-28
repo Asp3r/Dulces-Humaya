@@ -1,523 +1,621 @@
 
 /* ESTILOS PARA COMPUTADORAS Y PANTALLAS GRANDES */
-@media (min-width: 768px) {
 
-    header {
-        background-image: url("imgs/Central/imagenCentral.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+
+header {
+    background-image: url("imgs/Central/imagenCentral.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); 
+    width: 100%;
+    /* rgba(0, 0, 0, 0.7) */
+}
+
+.navbar a {
+    color: rgb(214, 212, 212); 
+}
+
+.navbar a:hover {
+    color: rgb(190, 150, 103);
+}
+
+.header-text{
+    width: 50%;
+    align-content: end;
+    margin-left: auto;
+    color: rgb(214, 212, 212); 
+    padding-top: 10%;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header-text h1{
+    font-weight: lighter;
+    padding-bottom: 5%;
+}
+
+.header-text P{
+    padding-bottom: 10%;
+}
+
+.boton-conocenos{
+    opacity: 0.6;
+    border-radius: 30px;
+    height: 60px;
+    width: 200px;
+    color: white;
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    /* margin: 20px auto 0 auto;  */
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.titulo-productos{
+    background-color: rgb(87, 87, 87);
+    color: white;
+    height: 80px;
+    display: flex; /* Activa flexbox en el contenedor */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+}
+
+.titulo-productos h3{
+    text-align: center;
+    margin: 0; /* Elimina márgenes adicionales del h3 */
     
-    .navbar {
-        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); 
-        width: 100%;
-        /* rgba(0, 0, 0, 0.7) */
-    }
+}
+
+.dulces {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr);    /* 2 filas de igual tamaño */
+    /*gap: 20px; Espacio entre las casillas */
+    /* padding: 20px; Opcional: espacio alrededor de la sección */
+    background-color: black;
+}
+
+.casilla {
+    /* border: 1px solid #ccc;  */
+    height: 350px; /* Altura de las casillas */
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1.25rem; Ajusta según sea necesario */
+    color: white;
     
-    .navbar a {
-        color: rgb(214, 212, 212); 
-    }
+}
+
+#casilla1{
+    background-image: url("imgs/Productos/Producto1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#casilla4{
+    background-image: url("imgs/Productos/Producto2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#casilla5{
+    background-image: url("imgs/Productos/Producto3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla h3{
+    font-weight: lighter;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: rgb(190, 150, 103);
+}
+
+.casilla p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+}
+
+.epigrafe{
+    padding-bottom: 5%;
+    font-weight: bold;
+    color: rgb(190, 150, 103);
+}
+
+.boton-info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: rgb(190, 150, 103);
+    border-color: rgb(190, 150, 103);
+}
+
+.boton-info:hover{
+    color: black;
+    border-color: black;
+    background-color: rgb(190, 150, 103);
+    /* rgb(190, 150, 103);; */
+}
+
+.alfajores-maicena{
+    display: flex;
+    justify-content: space-between; /* Distribuye espacio entre los contenedores hijos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    height: 350px;
+    background-color: rgb(184, 155, 112);
+}
+
+.alfajores-descripcion{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}    
+
+.alfajores-descripcion h3{
+    color: rgb(131, 95, 19);
+    font-weight: lighter;
+    padding-bottom: 3%;
+}
+
+
+#texto-descripcion-alfajores{
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
+    width: 75%;
+    color: white;
+    padding-bottom: 3%;
+}
+
+#epigrafe-alfajores{
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
+    width: 75%;
+    font-weight: bold;
+    color: rgb(92, 67, 14);
+    padding-bottom: 7%;
+}
+
+.boton-alfajores{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-color: black;
+    background-color: rgb(184, 155, 112);
+}
+
+.boton-alfajores:hover{
+    background-color: black;
+    color: rgb(190, 150, 103);
+    border-color: rgb(190, 150, 103);
+}
+
+.alfajores-imagen {
+    display:flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 49%;
+    height: 100%; /* Asegura que el contenedor `.alfajores-imagen` use toda la altura disponible */
+}
+
+.alfajores-imagen img {
+    width: 350px;
+    height: 300px;
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción si las dimensiones del contenedor cambian */
+}
+
+/* INICIO CHATGPT */
+
+.caracteristicas {
+background-color: rgb(52, 49, 49);
+color: aliceblue;
+display: flex;
+flex-direction: column;
+align-items: center; /* Centra los items horizontalmente */
+}
+
+.titulo-caract{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.titulo-caract-final{
+    padding-top: 3%;
+    /* padding-bottom: 1%; */
+}
+
+.titulo-caract,
+.titulo-caract-final {
+text-align: center; /* Alinea los textos del título al centro */
+margin: 10px 0; /* Añade márgenes para separar los títulos */
+}
+
+.items-caract {
+display: flex; /* Habilita Flexbox */
+justify-content: space-between; /* Asegura que los items se distribuyan con espacio entre los bordes */
+align-items: center; /* Asegura que los items estén alineados verticalmente en el mismo nivel */
+width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+padding: 0 25%; /* Añade espacio a los extremos izquierdo y derecho */
+gap: 10px; /* Espacio más reducido entre los items */
+}
+
+.item-box {
+flex: 1; /* Los items tomarán espacio equitativo */
+text-align: center; /* Centra el contenido dentro de cada item-box */
+max-width: 150px; /* Ancho máximo para los items */
+}
+
+.item-box img {
+width: 100%; /* Las imágenes ocuparán el ancho completo del item-box */
+height: auto; /* Mantiene la proporción de la imagen */
+}
+
     
-    .navbar a:hover {
-        color: rgb(190, 150, 103);
-    }
-    
-    .header-text{
-        width: 50%;
-        align-content: end;
-        margin-left: auto;
-        color: rgb(214, 212, 212); 
-        padding-top: 10%;
-        padding-bottom: 8%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
 
-    .header-text h1{
-        font-weight: lighter;
-        padding-bottom: 5%;
-    }
+/* FIN CHATGPT */
 
-    .header-text P{
-        padding-bottom: 10%;
-    }
+.contacto{
+    display: flex;
+    height: 430px;
+}
 
-    .boton-conocenos{
-        opacity: 0.6;
-        border-radius: 30px;
-        height: 60px;
-        width: 200px;
-        color: white;
-        display: block; /* Hace que el botón ocupe todo el ancho disponible */
-        /* margin: 20px auto 0 auto;  */
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: bold;
-    }
+.contacto-img{
+    width: 35%;
+    background-image: url("imgs/Formulario/formImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    .titulo-productos{
-        background-color: rgb(87, 87, 87);
-        color: white;
-        height: 80px;
-        display: flex; /* Activa flexbox en el contenedor */
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; 
-    }
+.contacto-form{
+    width: 65%;
+    background-color: beige;
+}
 
-    .titulo-productos h3{
-        text-align: center;
-        margin: 0; /* Elimina márgenes adicionales del h3 */
-        
-    }
-
-    .dulces {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 3 columnas de igual tamaño */
-        grid-template-rows: repeat(3, 1fr);    /* 2 filas de igual tamaño */
-        /*gap: 20px; Espacio entre las casillas */
-        /* padding: 20px; Opcional: espacio alrededor de la sección */
-        background-color: black;
-    }
-    
-    .casilla {
-        /* border: 1px solid #ccc;  */
-        height: 350px; /* Altura de las casillas */
-        display:flexbox;
-        justify-content: center;
-        align-items: center;
-        /* font-size: 1.25rem; Ajusta según sea necesario */
-        color: white;
-        
-    }
-
-    #casilla1{
-        background-image: url("imgs/Productos/Producto1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    #casilla4{
-        background-image: url("imgs/Productos/Producto2.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    #casilla5{
-        background-image: url("imgs/Productos/Producto3.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .casilla h3{
-        font-weight: lighter;
-        padding-top: 8%;
-        padding-bottom: 5%;
-        text-align: center;
-        color: rgb(190, 150, 103);
-    }
-
-    .casilla p{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 10%;
-    }
-
-    .epigrafe{
-        padding-bottom: 5%;
-        font-weight: bold;
-        color: rgb(190, 150, 103);
-    }
-
-    .boton-info{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: black;
-        color: rgb(190, 150, 103);
-        border-color: rgb(190, 150, 103);
-    }
-
-    .boton-info:hover{
-        color: black;
-        border-color: black;
-        background-color: rgb(190, 150, 103);
-        /* rgb(190, 150, 103);; */
-    }
-
-    .alfajores-maicena{
-        display: flex;
-        justify-content: space-between; /* Distribuye espacio entre los contenedores hijos */
-        align-items: center; /* Alinea verticalmente los elementos en el centro */
-        height: 350px;
-        background-color: rgb(184, 155, 112);
-    }
-
-    .alfajores-descripcion{
-        display: inline-block;
-        width: 50%;
-        text-align: center;
-    }    
-
-    .alfajores-descripcion h3{
-        color: rgb(131, 95, 19);
-        font-weight: lighter;
-        padding-bottom: 3%;
-    }
-    
-
-    #texto-descripcion-alfajores{
-        text-align: left; /* Alinea el texto a la izquierda */
-        margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
-        width: 75%;
-        color: white;
-        padding-bottom: 3%;
-    }
-
-    #epigrafe-alfajores{
-        text-align: left; /* Alinea el texto a la izquierda */
-        margin: 0 auto; /* Opcional: centra el bloque de texto, si no es ancho completo */
-        width: 75%;
-        font-weight: bold;
-        color: rgb(92, 67, 14);
-        padding-bottom: 7%;
-    }
-
-    .boton-alfajores{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-        border-color: black;
-        background-color: rgb(184, 155, 112);
-    }
-
-    .boton-alfajores:hover{
-        background-color: black;
-        color: rgb(190, 150, 103);
-        border-color: rgb(190, 150, 103);
-    }
-
-    .alfajores-imagen {
-        display:flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center;     /* Centra verticalmente */
-        width: 49%;
-        height: 100%; /* Asegura que el contenedor `.alfajores-imagen` use toda la altura disponible */
-    }
-    
-    .alfajores-imagen img {
-        width: 350px;
-        height: 300px;
-        object-fit: contain; /* Asegura que la imagen mantenga su proporción si las dimensiones del contenedor cambian */
-    }
-
-    /* INICIO CHATGPT */
-
-    .caracteristicas {
-    background-color: rgb(52, 49, 49);
-    color: aliceblue;
+.contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los items horizontalmente */
-    }
+    /* align-items: flex-start;  */
+}
 
-    .titulo-caract{
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
+.form-content{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    color: rgb(129, 86, 30);
+}
 
-    .titulo-caract-final{
-        padding-top: 3%;
-        /* padding-bottom: 1%; */
-    }
+.form-content p{
+    font-weight: bold;
+}
 
-    .titulo-caract,
-    .titulo-caract-final {
-    text-align: center; /* Alinea los textos del título al centro */
-    margin: 10px 0; /* Añade márgenes para separar los títulos */
-    }
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    background-color: rgb(129, 86, 30);
+    border: none;
+}   
 
-    .items-caract {
-    display: flex; /* Habilita Flexbox */
-    justify-content: space-between; /* Asegura que los items se distribuyan con espacio entre los bordes */
-    align-items: center; /* Asegura que los items estén alineados verticalmente en el mismo nivel */
-    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
-    padding: 0 25%; /* Añade espacio a los extremos izquierdo y derecho */
-    gap: 10px; /* Espacio más reducido entre los items */
-    }
+.form-group{
+    padding-bottom: 10px;
+}
 
-    .item-box {
-    flex: 1; /* Los items tomarán espacio equitativo */
-    text-align: center; /* Centra el contenido dentro de cada item-box */
-    max-width: 150px; /* Ancho máximo para los items */
-    }
+.contact-form button {
+    align-self: center; /* Centra el botón horizontalmente */
+    background-color: beige; /* Azul para el botón */
+    color: rgb(129, 86, 30);
+    border-color: rgb(129, 86, 30);
+    /* border-radius: 4px; */
+    border: 4px solid;
+    font-size: 16px;
 
-    .item-box img {
-    width: 100%; /* Las imágenes ocuparán el ancho completo del item-box */
-    height: auto; /* Mantiene la proporción de la imagen */
-    }
-
-      
-
-    /* FIN CHATGPT */
-
-    .contacto{
-        display: flex;
-        height: 430px;
-    }
+    padding-top: 2%;
+    padding-bottom: 2%;
     
-    .contacto-img{
-        width: 35%;
-        background-image: url("imgs/Formulario/formImg.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    width: 25%;
 
-    .contacto-form{
-        width: 65%;
-        background-color: beige;
-    }
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        /* align-items: flex-start;  */
-    }
+.contact-form button:hover {
+    border-color: rgb(129, 86, 30);
+    background-color: rgb(201, 169, 129); /* Azul más oscuro al pasar el mouse */
+    /* color: beige; */
+    transform: scale(1.1);
+}
 
-    .form-content{
-        width: 55%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-        color: rgb(129, 86, 30);
-    }
+.recetas{
+    background-color: #232121;
+}
 
-    .form-content p{
-        font-weight: bold;
-    }
+.titulo-recetas{
+    color: white;
+    text-align: center;
 
-    .contact-form input, .contact-form textarea{
-        width: 100%;
-        background-color: rgb(129, 86, 30);
-        border: none;
-    }   
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
-    .form-group{
-        padding-bottom: 10px;
-    }
+.principal-recetas {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+    align-items: flex-start; /* Alineación vertical de las tarjetas */
+    gap: 20px; /* Espaciado constante entre las tarjetas */
+    padding: 0 70px; /* Márgenes internos a la izquierda y derecha */
+    /* width: 80%; */
+}
 
-    .contact-form button {
-        align-self: center; /* Centra el botón horizontalmente */
-        background-color: beige; /* Azul para el botón */
-        color: rgb(129, 86, 30);
-        border-color: rgb(129, 86, 30);
-        /* border-radius: 4px; */
-        border: 4px solid;
-        font-size: 16px;
+/* .card-img{
+    width: 100%;
+} */
 
-        padding-top: 2%;
-        padding-bottom: 2%;
-        
-        width: 25%;
+.card-img img {
+    max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
+    height: auto;   /* Mantendrá la proporción correcta */
+    display: block; /* Evita espacios extra en imágenes inline */
+}
 
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    
-    .contact-form button:hover {
-        border-color: rgb(129, 86, 30);
-        background-color: rgb(201, 169, 129); /* Azul más oscuro al pasar el mouse */
-        /* color: beige; */
-        transform: scale(1.1);
-    }
+.card-titulo{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
-    .recetas{
-        background-color: #232121;
-    }
+.card-receta {
+    display: flex;
+    flex-direction: column; /* Apila el contenido verticalmente */
+    width: 28%; /* Define el ancho de cada tarjeta */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    background-color: #fff; /* Opcional: Fondo blanco para las tarjetas */
+    background-color: #BCA177;
 
-    .titulo-recetas{
-        color: white;
-        text-align: center;
-
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
-    .principal-recetas {
-        display: flex; /* Activa Flexbox */
-        justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
-        align-items: flex-start; /* Alineación vertical de las tarjetas */
-        gap: 20px; /* Espaciado constante entre las tarjetas */
-        padding: 0 70px; /* Márgenes internos a la izquierda y derecha */
-        /* width: 80%; */
-    }
-
-    /* .card-img{
-        width: 100%;
-    } */
-    
-    .card-img img {
-        max-width: 100%; /* La imagen nunca será más ancha que el contenedor */
-        height: auto;   /* Mantendrá la proporción correcta */
-        display: block; /* Evita espacios extra en imágenes inline */
-    }
-    
-    .card-titulo{
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
-    .card-receta {
-        display: flex;
-        flex-direction: column; /* Apila el contenido verticalmente */
-        width: 28%; /* Define el ancho de cada tarjeta */
-        box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-        background-color: #fff; /* Opcional: Fondo blanco para las tarjetas */
-        background-color: #BCA177;
-
-        width: 361px;
-        max-width: 361px;
-
-    }
-
-    .card-descripcion{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .card-boton-box{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5%;
-        width: 45%;
-    }
-
-    .card-boton-elemento{
-        background-color: #BCA177;
-        border: 3px solid #795f34;
-        color: #795f34;
-        font-weight: bold;
-        font-size:small;
-
-        width: 100%;
-
-        transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-
-    .card-boton-elemento:hover{
-
-        transform: scale(1.1);
-        background-color: #cfa983;
-        
-    }
-    
-    .titulo-debajo{
-
-        color: white;
-        text-align: center;
-
-        padding-top: 2%;
-        padding-bottom: 2%;
-
-    }
-
-    footer {
-        display: flex; /* Activa Flexbox */
-        justify-content: space-between; /* Espacio entre cada sección */
-        align-items: center; /* Alinea las secciones verticalmente al centro */
-        padding: 20px; /* Espacio interno para el footer */
-        background-color: black; /* Opcional: color de fondo para contraste */
-    }
-    
-    footer section {
-        flex: 1; /* Distribuye el espacio de las secciones de manera uniforme */
-        /* border: 2px solid #BCA177; Borde para testeo */
-        padding: 10px; /* Espacio interno para cada sección */
-        margin-left: 5px; /* Espacio entre las secciones */
-        margin-right: 5px;
-
-        height: 250px;
-        max-height: 250px;
-        min-height: 250px;
-    }
-
-    .footer-logo{
-        text-align: center;/* Centra el contenido dentro de cada sección */
-    }
-
-    #footer-logo-elemento{
-        width: 70%;
-
-    }
-
-    footer h4{
-        color: #795f34;
-        font-weight: lighter;
-    }
-
-    footer section p{
-        color: white;
-        font-weight: bold;
-    } 
-
-    footer section h5{
-        color: white;
-
-    }
-
-    footer section p:hover{
-        color: #cfa983;
-        cursor: pointer;
-    }
-    
-    .footer-redes{
-        width: 5%;
-    }
-
-    .footer-redes h4{
-        /* width: 40%; */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-redes img{
-        width: 100%;
-        transition: transform 0.3s ease
-    }
-
-    .footer-redes img:hover{
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-
-    .footer-redes div{
-        padding-bottom: 2%;
-        width: 21%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .elemento-mapa{
-        width: 100%;
-    }
+    width: 361px;
+    max-width: 361px;
 
 }
+
+.card-descripcion{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-boton-box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 45%;
+}
+
+.card-boton-elemento{
+    background-color: #BCA177;
+    border: 3px solid #795f34;
+    color: #795f34;
+    font-weight: bold;
+    font-size:small;
+
+    width: 100%;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-boton-elemento:hover{
+
+    transform: scale(1.1);
+    background-color: #cfa983;
+    
+}
+
+.titulo-debajo{
+
+    color: white;
+    text-align: center;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+footer {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre cada sección */
+    align-items: center; /* Alinea las secciones verticalmente al centro */
+    padding: 20px; /* Espacio interno para el footer */
+    background-color: black; /* Opcional: color de fondo para contraste */
+}
+
+footer section {
+    flex: 1; /* Distribuye el espacio de las secciones de manera uniforme */
+    /* border: 2px solid #BCA177; Borde para testeo */
+    padding: 10px; /* Espacio interno para cada sección */
+    margin-left: 5px; /* Espacio entre las secciones */
+    margin-right: 5px;
+
+    height: 250px;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.footer-logo{
+    text-align: center;/* Centra el contenido dentro de cada sección */
+}
+
+#footer-logo-elemento{
+    width: 70%;
+
+}
+
+footer h4{
+    color: #795f34;
+    font-weight: lighter;
+}
+
+footer section p{
+    color: white;
+    font-weight: bold;
+} 
+
+footer section h5{
+    color: white;
+
+}
+
+footer section p:hover{
+    color: #cfa983;
+    cursor: pointer;
+}
+
+.footer-redes{
+    width: 5%;
+}
+
+.footer-redes h4{
+    /* width: 40%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-redes img{
+    width: 100%;
+    transition: transform 0.3s ease
+}
+
+.footer-redes img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footer-redes div{
+    padding-bottom: 2%;
+    width: 21%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elemento-mapa{
+    width: 100%;
+}
+
 
 
 /* ESTILOS PARA TABLETAS Y DISPOSITIVOS MOVILES */
 @media (max-width: 767px) {
 
-    .principal-recetas {
-        flex-direction: column; /* Cambia a disposición vertical */
-        gap: 15px; /* Espaciado más pequeño */
+    header{
+        width: 100%;
     }
 
-    .card-receta {
-        width: 100%; /* Ocupa todo el ancho */
+    .titulo-productos{
+        width: 100%;
     }
+
+    .dulces{
+        width: 100%;
+    }
+
+    .alfajores-maicena{
+        width: 100%;
+    }
+
+    .caracteristicas{
+        width: 100%;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .recetas{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .navbar{
+
+        /* width: 90%; */
+        /* display: flex; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-principal{
+        display: none;
+    }
+
+    .img-responsive{
+        
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    .header-text{
+        width: 90%;
+    }
+
+    .dulces {
+        display: grid; /* Activamos grid */
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: repeat(6, auto); /* Seis filas, ajustándose automáticamente al contenido */
+    }
+
+    .casilla{
+        width: 100%;
+    }
+
+    .casilla-vacia{
+        display: none;
+    }
+
+    #casilla2{
+
+        /* background-image: url("imgs/Productos/Producto1.png"); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imgs/Productos/Producto1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #casilla3{
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/Productos/Producto2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #casilla6{
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/Productos/Producto3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .alfajores-descripcion{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .alfajores-imagen{
+        display: none;
+    }
+    
 
 }
