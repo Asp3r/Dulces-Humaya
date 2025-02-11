@@ -651,5 +651,16 @@ footer section p:hover{
         width: 70%;
     }
     
+    .principal-recetas {
+        display: grid; /* Activa el grid */
+        grid-template-columns: 1fr; /* Define una sola columna */
+        grid-gap: 24px; /* Espaciado entre las filas */
+      }
+      
+      .card-receta {
+        text-align: center; /* Centra el contenido de cada card (opcional) */
+        width: 100%;
+      }
+      
 
 }
