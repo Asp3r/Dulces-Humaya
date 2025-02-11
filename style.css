@@ -616,6 +616,40 @@ footer section p:hover{
     .alfajores-imagen{
         display: none;
     }
+
+    .items-caract {
+        display: grid; /* Activa el modo grid */
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-gap: 16px; /* Espaciado entre las filas (opcional) */
+
+        align-items: center;
+    }
+      
+    .item-box, .titulo-caract, .titulo-caract-final {
+     text-align: center; /* Centra el contenido dentro de cada item */
+    }
+     
+    .item-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contacto-img{
+        display: none;
+    }
+
+    /* background-image: url("imgs/Formulario/formImg.png"); */
+
+    .contacto-form{
+        background-image: linear-gradient(rgba(245, 245, 220, 0.7), rgba(245, 245, 220, 0.7)), url("imgs/Formulario/formImg.png");
+
+        width: 100%;
+    }
+
+    
+    .contact-form button{
+        width: 70%;
+    }
     
 
 }
